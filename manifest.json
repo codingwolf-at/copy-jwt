@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Copy Token",
+    "version": "1.0",
+    "description": "Searches local and session storage for a JWT token and copies it to the clipboard.",
+    "permissions": ["scripting", "activeTab", "contextMenus", "clipboardWrite"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Copy JWT Token",
+        "default_icon": "/assets/jwt-48.png"
+    }
+  }
+  
